@@ -3,6 +3,7 @@ import TitleComp from "../components/TitlesTrakers/TitleComp";
 import { getDataByCountry } from "../services/apiService";
 import CountryInfo from "../components/tracker4/CountryInfo";
 import CountryButton from "../components/tracker4/CountryButton";
+import { Breadcrumbs, Link, Typography } from "@mui/material";
 
 const Tracker4 = () => {
   const countries = [
@@ -51,6 +52,17 @@ const Tracker4 = () => {
 
   return (
     <div>
+     <div className="ml-1 mt-1">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link underline="hover" color="inherit" href="/">
+            Home
+          </Link>
+          <Link underline="hover" color="inherit" href="/dashboard">
+            Dashboard
+          </Link>
+          <Typography color="text.primary">Tracker4</Typography>
+        </Breadcrumbs>
+      </div>
       <TitleComp title="Covid-19 Country Wise - Tabs" />
       <div className="flagContainer">
         {countries.map((country) => (

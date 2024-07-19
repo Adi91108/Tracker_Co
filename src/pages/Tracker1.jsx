@@ -7,6 +7,7 @@ import Mapa from "../components/tracker1/mapa/Mapa.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MapChart from "../components/Map/MapChart.jsx";
 import "leaflet/dist/leaflet.css";
+import { Breadcrumbs, Link, Typography } from "@mui/material";
 
 const Tracker1 = () => {
   const [data, setData] = useState([]);
@@ -68,14 +69,25 @@ const Tracker1 = () => {
   const globalData = dataGlobal;
   // console.log(countryData.countryInfo.lat);
   // console.log(data,"data")
- // console.log(center);
+  // console.log(center);
 
   return (
     <div style={{ backgroundColor: "#F7F8FC" }}>
+      <div className="ml-1 mt-1">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link underline="hover" color="inherit" href="/">
+            Home
+          </Link>
+          <Link underline="hover" color="inherit" href="/dashboard">
+            Dashboard
+          </Link>
+          <Typography color="text.primary">Tracker1</Typography>
+        </Breadcrumbs>
+      </div>
       <div>
         <div className="row">
           <div className="col-md-4 flex">
-            <SelectCountry onSelectCountry={handleSelectCountry} /> 
+            <SelectCountry onSelectCountry={handleSelectCountry} />
           </div>
           <div className="col-md-8 p-4">
             <div className="text-end">Updated July 01, 2024</div>
@@ -139,7 +151,7 @@ const Tracker1 = () => {
               </div>
               <div className="col-md-6 order-md-3">
                 {/* <Mapa /> */}
-                <MapChart center={center} zoom={zoom}/>
+                <MapChart center={center} zoom={zoom} />
               </div>
             </div>
           </div>
