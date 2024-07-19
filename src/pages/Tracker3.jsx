@@ -6,7 +6,7 @@ const Tracker3 = () => {
     return (
         <div>
         <TitleComp title='Top 10 Country wise Covid-19 Upgrades - Tiles'></TitleComp>
-        <CountriesTable></CountriesTable>
+        <CountriesTable/>
         </div>
     )
 }
