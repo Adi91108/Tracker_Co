@@ -1,14 +1,18 @@
 // import React from 'react'
-import TitleComp from '../components/TitlesTrakers/TitleComp'
-import CountriesTable from '../components/tracker3/countryTable/CountriesTable'
+import TitleComp from "../components/TitlesTrakers/TitleComp";
+// import "../node_modules/leaflet/dist/leaflet.css";
+import "leaflet/dist/leaflet.css";
+import Map from "../components/tracker3/map/Map";
+// import CountriesTable from '../components/tracker3/countryTable/CountriesTable'
 
 const Tracker3 = () => {
-    return (
-        <div>
-        <TitleComp title='Top 10 Country wise Covid-19 Upgrades - Tiles'></TitleComp>
-        <CountriesTable/>
-        </div>
-    )
-}
+  return (
+    <div>
+      <TitleComp title="State wise Covid-19 Upgrades - Graph & Table"></TitleComp>
+      {/* <CountriesTable/> */}
+      <Map />
+    </div>
+  );
+};
 
-export default Tracker3
+export default Tracker3;

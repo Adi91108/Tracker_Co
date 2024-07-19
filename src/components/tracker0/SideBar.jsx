@@ -46,14 +46,16 @@ const SideBar = () => {
                 </span>
               </li>
             </Link>
-            <li>
-              <span className="SquaresStack">
-                <AiOutlineGlobal  size={25} />
-              </span>
-            </li>
+            <Link to="/dashboard/tracker4">
+              <li>
+                <span className="SquaresStack">
+                  <AiOutlineGlobal size={25} />
+                </span>
+              </li>
+            </Link>
             <li>
               <span className="ArrowTrendingUp">
-                <TbBuildingEstate  size={25} />
+                <TbBuildingEstate size={25} />
               </span>
             </li>
             {/* <li>
