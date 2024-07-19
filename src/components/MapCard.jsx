@@ -36,7 +36,7 @@ export default function MapCard({ totalResByCountry, selcountries }) {
         </CircularProgress>
         <CardContent>
           <div className="text-center">
-            <Typography level="h3">Country Detail Data - {selcountries}</Typography>
+            <Typography level="h4">Country Detail Data - {selcountries}</Typography>
           </div>
           <br />
 
