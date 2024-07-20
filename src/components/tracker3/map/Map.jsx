@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CircleMarker, MapContainer, Popup, TileLayer } from "react-leaflet";
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Breadcrumbs, Card, CardContent, Typography } from "@mui/material";
 import { Bar } from "react-chartjs-2";
 // import MapCard from "../components/MapCard";
 // import MapTable from "../components/MapTable";
@@ -9,8 +9,10 @@ import "./Map.css";
 import MapCard from "../../MapCard";
 import MapTable from "../../MapTable";
 import { Chart, registerables } from "chart.js";
+import { Link } from "react-router-dom";
+import TitleComp from "../../TitlesTrakers/TitleComp";
 
-Chart.register(...registerables)
+Chart.register(...registerables);
 
 const Map = () => {
   const [selcountries, setSelCountries] = useState("IND");
@@ -61,6 +63,22 @@ const Map = () => {
 
   return (
     <>
+      <div className="ml-1 mt-1">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link underline="hover" className="bg-white text-midnight" href="/">
+            Home
+          </Link>
+          <Link
+            underline="hover"
+            className="bg-white text-midnight"
+            href="/dashboard"
+          >
+            Dashboard
+          </Link>
+          <Typography>{selcountries}</Typography>
+        </Breadcrumbs>
+      </div>
+      <TitleComp title="State wise Covid-19 Upgrades - Graph & Table"></TitleComp>
       <div className="flex w-3/5  justify-between">
         <div className="flex">
           <h3 className="ml-2 mt-4">Select date : </h3>

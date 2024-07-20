@@ -10,22 +10,7 @@ import { Link } from "react-router-dom";
 const Tracker3 = () => {
   return (
     <div>
-      <div className="ml-1 mt-1">
-        <Breadcrumbs aria-label="breadcrumb">
-          <Link underline="hover" className="bg-white text-midnight" href="/">
-            Home
-          </Link>
-          <Link
-            underline="hover"
-            className="bg-white text-midnight"
-            href="/dashboard"
-          >
-            Dashboard
-          </Link>
-          <Typography>Tracker4</Typography>
-        </Breadcrumbs>
-      </div>
-      <TitleComp title="State wise Covid-19 Upgrades - Graph & Table"></TitleComp>
+      {/* <TitleComp title="State wise Covid-19 Upgrades - Graph & Table"></TitleComp> */}
       {/* <CountriesTable/> */}
       <Map />
     </div>
