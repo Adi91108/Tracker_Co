@@ -18,14 +18,14 @@ The project is developed with React and JavaScript, offering an intuitive and ea
 - **HTML, CSS**
 - **React**: Main library for building the user interface.
 - **JavaScript**: Programming language used for the project's logic.
-- **Disease CovidMap API**: Source of COVID-19 data ([http://disease.sh/](http://disease.sh/)).
+- **Disease CovidMap API**: Source of COVID-19 data ([http://disease.sh/](http://disease.sh/)) & ([[https://covid-api.com/](https://covid-api.com/)].
 - **Axios**: Used to make requests to the API.
 - **Costume Hook Fetch API**: Made apiServices to fetch data easily.
-- **Bootstrap**: CSS framework for the responsive and styled design of the dashboard.
+- **Bootstrap & MUI **: CSS framework for the responsive and styled design of the dashboard.
 - **DataTables (with jQuery)**: For creating the interactive table of Tracker 2.
 - **React Data Table Component**: For the development of Tracker 3.
-- **GitHub**: [Repository](https://github.com/Paola077/project_covid_tracker.git)
-- **JVector Map**: Interactive world map.
+- **GitHub**: [Repository](https://github.com/Adi91108/Tracker_Co)
+- **Leaflet Map**: Interactive world map.
 - **Vistest**: Framework used for testing.
 
 ## Installation 💻
