@@ -7,7 +7,6 @@ const TotalConfirmed = ({totalTitleStyle,totalTitleValue,confirmedStyle,confirme
     <>
       <div className="tarjetaContentTotal">
         <div className="box">
-          <img src={`../src/assets/img/${imageName}`} className="imgConfirm" />
         </div>
         <div className="totalConfirmed">
           <span className={totalTitleStyle}>{totalTitleValue}</span>

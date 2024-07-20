@@ -56,9 +56,9 @@
 
 }
 .menuSideBar ul li span:hover {
-    background-color: #3639AE;
-    border-color: #3639AE;
-    color: #F7F8FC;
+    /* background-color: white; */
+    border-color: black;
+    color: #0daf94;
     border-radius: 10px;
     padding: 20px;
 

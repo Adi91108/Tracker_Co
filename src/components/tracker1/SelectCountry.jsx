@@ -31,7 +31,7 @@ const SelectCountry = ({ onSelectCountry }) => {
     return (
       <div className="container my-3">
         <select className="form-select" name="countries" id="countries"
-          onChange={(e) => handleCountryChange(e.target.value)}
+          onChange={(e) => handleCountryChange(e.target.value)} defaultValue={"India"}
         >
           <option value="">Select a Country</option>
           {allCountries.map((countryObject) => (
